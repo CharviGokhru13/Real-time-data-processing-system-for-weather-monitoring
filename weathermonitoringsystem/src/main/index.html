@@ -5,28 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Information</title>
     <style>
+        /* Base styling */
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
+        h1 {
+            color: #004d40;
+            text-align: center;
+        }
+        
+        /* Weather card container */
+        .weather-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Weather info styling */
+        #weather-info p {
+            font-size: 1.1em;
+            color: #333;
+            margin: 8px 0;
+        }
+
+        /* Button styling */
         #refresh-btn {
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin-top: 20px;
+            font-size: 1em;
             cursor: pointer;
-            background-color: #007bff;
+            background-color: #00796b;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
         }
-        #weather-info p {
-            margin: 5px 0;
+        #refresh-btn:hover {
+            background-color: #004d40;
         }
     </style>
 </head>
 <body>
-    <h1>Weather Information</h1>
-    <div id="weather-info"></div>
-    <button id="refresh-btn">Refresh</button>
+    <div class="weather-container">
+        <h1>Weather Information</h1>
+        <div id="weather-info">
+            <p>Loading...</p> <!-- Placeholder text before the weather data loads -->
+        </div>
+        <button id="refresh-btn">Refresh</button>
+    </div>
 
     <script src="script.js"></script>
     <script>

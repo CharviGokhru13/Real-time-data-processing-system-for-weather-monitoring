@@ -22,7 +22,7 @@ public class WeatherService {
 	 private final String apiKey;
 
 	    // Constructor with @Value to inject API key
-	    public WeatherService(@Value("840de593b7028de6e424162454790fe5") String apiKey) {
+	    public WeatherService(@Value("API KEY") String apiKey) {
 	        this.apiKey = apiKey;
 	    }
 
