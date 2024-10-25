@@ -61,7 +61,7 @@ Navigate to the backend directory and open it with your preferred IDE (e.g., Int
 Add your OpenWeatherMap API key in the WeatherService class (@Value("your-api-key")).
 Build the project using Maven
 Frontend Setup:Navigate to the frontend directory,Open index.html in your browser or start a simple HTTP server
-
+ 
 Usage:
 
 When the application is running, it will display weather information for the predefined cities.
